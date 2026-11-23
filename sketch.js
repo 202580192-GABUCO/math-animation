@@ -1,8 +1,8 @@
   let centerX;
   let centerY;
-  let orbitRadius = 100;     
-  let angle = 1;             
-  let angularSpeed = 0.05;   
+  let orbitRadius = 150;     
+  let angle = 0;             
+  let angularSpeed = 0.002;   
   let isPaused = false;      
 
   function setup() {
