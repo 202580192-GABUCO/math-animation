@@ -7,6 +7,7 @@
 
   function setup() {
     createCanvas(600, 500);
+    
 
     centerX = width / 2;
     centerY = height / 2;
@@ -87,7 +88,12 @@
   
     if (key === ' ') {
       isPaused = !isPaused;
-      return false; 
+      return false;
+      
+    }
+
+    if ([UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW].includes(keyCode)) {
+    return false;
     }
     
     
