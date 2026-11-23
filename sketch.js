@@ -6,8 +6,10 @@
   let isPaused = false;      
 
   function setup() {
-    createCanvas(600, 500);
-    
+    let cnv = createCanvas(600, 500);
+  
+    cnv.attribute('tabindex', '0');
+    cnv.elt.focus();
 
     centerX = width / 2;
     centerY = height / 2;
